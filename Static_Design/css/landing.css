@@ -191,13 +191,29 @@ body {
   align-items: center;
   justify-content: space-between;
   color: var(--clr-light);
+  padding-block: 12px;
 }
 
 .logo {
-  font-size: 24px;
+  /* font-size: 24px;
   font-weight: var(--fw-light);
   letter-spacing: 4px;
-  color: #fff;
+  color: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 48px;
+}
+
+.light-logo.active {
+  display: none;
+}
+
+.dark-logo.active {
+  display: none;
 }
 
 .nav-toggle {
@@ -487,7 +503,7 @@ body.dark-theme .about::before {
 
   .nav-toggle {
     position: absolute;
-    top: 27px;
+    top: 24px;
     right: 24px;
     display: flex;
     flex-direction: column;

@@ -51,6 +51,9 @@ const DarkLight = document.getElementById("dark-light");
 //     }
 // }
 
+const darkLogo = document.querySelector(".dark-logo");
+const lightLogo = document.querySelector(".light-logo");
+
 toggleBtn.onclick = function () {
   toggleBtn.classList.toggle("theme-dark");
   body.classList.toggle("dark-theme");
@@ -59,6 +62,8 @@ toggleBtn.onclick = function () {
   } else {
     DarkLight.classList.replace("fa-moon", "fa-sun");
   }
+  darkLogo.classList.toggle("active");
+  lightLogo.classList.toggle("active");
 };
 
 const navScroll = function (str) {
