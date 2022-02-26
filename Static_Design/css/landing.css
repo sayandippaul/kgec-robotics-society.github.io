@@ -503,7 +503,7 @@ body.dark-theme .about::before {
 
   .nav-toggle {
     position: absolute;
-    top: 24px;
+    top: 28px;
     right: 24px;
     display: flex;
     flex-direction: column;
@@ -701,8 +701,8 @@ body.dark-theme .about::before {
 
   .toggle-btn {
     padding: 8px;
-    top: 80px;
-    right: -2px;
+    top: 85px;
+    /* right: -2px; */
   }
 
   .cta-btn {
