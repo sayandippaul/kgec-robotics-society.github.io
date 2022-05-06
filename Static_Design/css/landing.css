@@ -195,10 +195,6 @@ body {
 }
 
 .logo {
-  /* font-size: 24px;
-  font-weight: var(--fw-light);
-  letter-spacing: 4px;
-  color: #fff; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -264,7 +260,7 @@ body {
   display: flex;
   align-items: center;
   background-color: var(--clr-accent);
-  color: var(--clr-light);
+  color: #fff;
 }
 
 .hero {
@@ -403,7 +399,6 @@ body.dark-theme .about::before {
   margin-bottom: 2rem;
   color: var(--clr-accent);
   font-weight: var(--fw-regular);
-  border-bottom: 2px solid var(--clr-underline);
 }
 
 .about p {
