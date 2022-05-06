@@ -58,9 +58,15 @@
 }
 
 .motto-description .motto-text {
-  font-size: 1.825rem;
+  font-size: 1.5rem;
   word-spacing: 8px;
   letter-spacing: 4px;
   font-family: "Lobster", cursive;
   color: var(--clr-light);
+}
+
+@media screen and (max-width: 548px) {
+  .about-video {
+    padding-bottom: 75%;
+  }
 }
