@@ -11,11 +11,11 @@
 
 .about-video {
   position: relative;
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
-  padding-bottom: 45%;
-  margin-bottom: 64px;
+  padding-bottom: 50%;
+  margin-bottom: 4rem;
 }
 
 /* .about-video iframe {
@@ -53,7 +53,7 @@
   font-size: 2.5rem;
   margin: auto;
   margin-bottom: 1rem;
-  color: var(--clr-main-bg);
+  color: #fff;
   font-weight: var(--fw-regular);
 }
 
