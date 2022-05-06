@@ -9,13 +9,13 @@
 .container-project-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 .project-card {
   background-color: var(--clr-one);
-  padding: 48px 24px;
   border-radius: 16px;
+  padding: 48px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +23,25 @@
   text-align: center;
   box-shadow: 0px 4px 24px -8px var(--clr-box-shadow);
   /* -1px -1px 2px -72px var(--clr-box-shadow); */
+  position: relative;
+}
+
+.project-card-bar {
+  position: absolute;
+  width: 4px;
+  height: 50%;
+  background-color: var(--clr-accent);
+  border-radius: 4px;
+}
+
+.right-bar {
+  top: 10px;
+  left: 0;
+}
+
+.left-bar {
+  bottom: 10px;
+  right: 0;
 }
 
 .project-card-img {
