@@ -69,6 +69,7 @@ li {
 button {
   background: none;
   border: 0;
+  cursor: pointer;
 }
 
 html {
@@ -80,6 +81,7 @@ body.light-theme {
   --clr-light: #ffe3fe;
   --clr-medium-light: #686868;
   --clr-one: #fff;
+  --clr-accent-light: #9900f8;
   --clr-accent: #7d00c9;
   --clr-two: #000;
   --clr-underline: #83a4ff;
@@ -93,6 +95,7 @@ body.dark-theme {
   --clr-light-two: #ef02ff;
   --clr-medium-light: #b9b9b9;
   --clr-one: #000;
+  --clr-accent-light: #b940c6;
   --clr-accent: #93329e;
   --clr-two: #fff;
   --clr-underline: #83a4ff;
@@ -625,8 +628,7 @@ body.dark-theme .about::before {
 
   .about-title {
     font-size: 32px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-inline: auto;
     margin-bottom: 16px;
   }
 
@@ -736,7 +738,7 @@ body.dark-theme .about::before {
   }
 
   .about-title {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .about-content p {

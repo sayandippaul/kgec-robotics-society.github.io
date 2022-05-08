@@ -1,0 +1,140 @@
+.techfest-section {
+  padding-bottom: 4rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.techfest-event-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+}
+
+.container-techfest .techtix-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.container-techfest .event-main-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--clr-accent);
+  font-weight: var(--fw-regular);
+}
+
+.container-techfest .event-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 1px;
+  padding-left: 1rem;
+  border-left: 4px solid var(--clr-medium-light);
+}
+
+.container-techfest .part-techtix {
+  color: var(--clr-medium-light);
+  font-weight: 600;
+  padding: 3px 8px;
+}
+
+.container-techfest .techtix-description ul {
+  color: var(--clr-medium-light);
+  font-weight: bold;
+}
+
+.container-techfest .event-content-links {
+  width: 100%;
+}
+
+/* @media screen and (min-width: 908px) {
+  .container-techfest .event-content-links {
+    padding-top: 6.75rem;
+  }
+} */
+
+.event-video {
+  width: 100%;
+  position: relative;
+  padding-bottom: 50%;
+}
+
+.container-techfest iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  box-shadow: 0 8px 24px var(--clr-box-shadow);
+  border-radius: 12px;
+}
+
+.container-techfest .content-links {
+  display: flex;
+  margin-top: 32px;
+  justify-content: space-between;
+}
+
+.container-techfest .btn-rectangular {
+  background-color: var(--clr-accent);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 250ms ease;
+}
+
+.container-techfest .btn-rectangular:hover {
+  background-color: var(--clr-accent-light);
+}
+
+.container-techfest .btn-rectangular i {
+  margin-left: 12px;
+}
+
+.container-techfest .social-media-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container-techfest .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--clr-accent);
+  color: #fff;
+  transition: background-color 250ms ease;
+}
+
+.container-techfest .social-links:hover {
+  background-color: var(--clr-accent-light);
+}
+
+@media only screen and (max-width: 908px) {
+  .techfest-event-details {
+    grid-template-columns: auto;
+  }
+  .container-techfest .event-main-title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .container-techfest .event-main-title {
+    margin-inline: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container-techfest .event-main-title {
+    font-size: 28px;
+  }
+}
