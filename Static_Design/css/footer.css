@@ -1,0 +1,126 @@
+footer .col-container {
+  padding: 24px 40px 40px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--clr-accent);
+}
+
+footer .footer-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 2rem;
+}
+
+footer .footer-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+footer .footer-container ul > li {
+  line-height: 1.6;
+}
+
+footer .footer-about h2,
+footer .footer-contact-us h2,
+footer .footer-quick-links h2 {
+  margin-bottom: 3rem;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+footer .footer-about h2::after,
+footer .footer-contact-us h2::after,
+footer .footer-quick-links h2::after {
+  content: "";
+  width: 200px;
+  height: 2px;
+  background: linear-gradient(to right, white 20%, #afafaf 20%, #afafaf);
+  position: absolute;
+  top: 147%;
+  left: 0;
+}
+
+footer .footer-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+footer .footer-list-item-links {
+  transition: color 250ms ease;
+  cursor: pointer;
+}
+
+footer .footer-list-item i {
+  font-size: 16px;
+  width: 20px;
+}
+
+footer .copyright {
+  font-weight: 400;
+  color: var(--clr-medium-light);
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  background: var(--clr-one);
+  font-size: 1rem;
+}
+
+footer .footer-social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+footer .footer-social-links a {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 250ms ease, border-color 250ms ease;
+}
+
+footer .footer-social-links a:hover {
+  border-color: #cdcdcd;
+  color: #cdcdcd;
+}
+
+footer .footer-list-item-links:hover {
+  color: #cdcdcd;
+}
+
+footer .item-center-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 924px) {
+  footer .footer-container {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 548px) {
+  footer .col-container {
+    padding-inline: 0;
+  }
+
+  footer .footer-about .footer-list-item {
+    align-items: flex-start;
+  }
+
+  footer .footer-about .footer-list-item i {
+    padding-top: 5px;
+  }
+}
