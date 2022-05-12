@@ -109,6 +109,16 @@ footer .item-center-title {
   footer .footer-container {
     grid-template-columns: auto;
   }
+  footer .footer-about h2,
+  footer .footer-contact-us h2,
+  footer .footer-quick-links h2 {
+    width: 100%;
+  }
+  footer .footer-about h2::after,
+  footer .footer-contact-us h2::after,
+  footer .footer-quick-links h2::after {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 548px) {
