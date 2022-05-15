@@ -178,7 +178,7 @@
 }
 
 .member-list {
-  border: 2px solid var(--clr-medium-light);
+  border: 2px solid var(--clr-accent);
   border-right: none;
   width: 100%;
   display: grid;
@@ -194,7 +194,7 @@
 .member-list-item {
   text-align: center;
   padding: 12px;
-  border-right: 2px solid var(--clr-medium-light);
+  border-right: 2px solid var(--clr-accent);
   color: var(--clr-medium-light);
 }
 .color1 {
@@ -228,7 +228,7 @@
 
 @media screen and (max-width: 768px) {
   .card {
-    max-width: 400px;
+    max-width: 350px;
   }
 }
 
