@@ -11,7 +11,7 @@
 .faculty {
   width: 100%;
   padding: var(--gen-padding);
-  margin-bottom: 5vh;
+  margin-bottom: 64px;
   /* border-bottom: 1.5px solid var(--clr-dark); */
 }
 
@@ -120,7 +120,7 @@
 .club-head {
   width: 100%;
   padding: var(--gen-padding);
-  margin-bottom: 5vh;
+  margin-bottom: 64px;
 }
 
 /* domain-leads */
@@ -129,7 +129,7 @@
   margin: auto;
   padding: var(--gen-padding);
 
-  margin-bottom: 5vh;
+  margin-bottom: 64px;
 }
 
 .domain-leads .row-2 {
@@ -138,11 +138,10 @@
 
 .team h3 {
   margin: auto;
-  margin-bottom: 10px;
-  color: var(--clr-medium-light);
+  margin-bottom: 16px;
+  color: var(--clr-accent);
   font-weight: var(--fw-bold);
   font-size: 20px;
-  line-height: 1.6;
 }
 
 .team ul {
@@ -166,7 +165,7 @@
 .team ul li::marker {
   font-size: 20px;
   margin: auto;
-  color: var(--clr-medium-light);
+  color: var(--clr-accent);
 }
 
 /* members and interns styling  */
@@ -178,30 +177,25 @@
 }
 
 .member-list {
-  border: 2px solid var(--clr-accent);
-  border-right: none;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 8px;
+  padding: 24px;
+  border-radius: 16px;
   margin-block: 48px;
+  background-color: var(--clr-one);
+  box-shadow: 0px 2px 8px var(--clr-box-shadow);
 }
-.member-list-desktop {
-  display: grid;
-}
-.member-list-mobile {
-  display: none;
-}
+
 .member-list-item {
   text-align: center;
-  padding: 12px;
-  border-right: 2px solid var(--clr-accent);
-  color: var(--clr-medium-light);
-}
-.color1 {
-  background-color: var(--clr-one);
-}
-.color2 {
+  padding: 16px;
   background-color: var(--clr-main-bg);
+  color: var(--clr-medium-light);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .interns {
@@ -210,7 +204,7 @@
 }
 .club-mem h1,
 .interns h1 {
-  margin-bottom: 5vh;
+  margin-bottom: 40px;
 }
 
 /* responsive */
@@ -232,21 +226,6 @@
   }
 }
 
-@media (max-width: 720px) {
-  .member-list {
-    grid-template-columns: auto;
-  }
-  .member-list-desktop {
-    display: none;
-  }
-  .member-list-mobile {
-    display: grid;
-  }
-  .member-list-item {
-    font-size: 14px;
-    font-weight: 500;
-  }
-}
 @media only screen and (max-width: 375px) {
   .member-section h2 {
     font-size: 28px;

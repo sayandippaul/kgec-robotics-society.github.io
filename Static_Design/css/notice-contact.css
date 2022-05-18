@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   border-radius: 16px;
-  box-shadow: 0px 4px 24px -8px var(--clr-box-shadow);
+  box-shadow: 0px 2px 8px var(--clr-box-shadow);
 }
 
 .ongoing-notice,
@@ -47,6 +47,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  color: var(--clr-medium-light);
 }
 
 .notice-content ul li {
@@ -76,7 +77,7 @@
 }
 
 .contact-box {
-  max-width: 400px;
+  max-width: 350px;
 }
 
 .bot-image {
@@ -97,7 +98,7 @@
   background-color: var(--clr-one);
   padding: 24px;
   border-radius: 12px;
-  box-shadow: 0px 4px 24px -8px var(--clr-box-shadow);
+  box-shadow: 0px 2px 8px var(--clr-box-shadow);
 }
 
 .main-form h2 {
@@ -221,7 +222,8 @@
   }
 
   .contact-box {
-    max-width: 100%;
+    width: 100%;
+    margin: auto;
   }
 
   .contact-text {
@@ -245,6 +247,9 @@
   }
   .bot-image img {
     width: 35%;
+  }
+  .notice-content ul {
+    font-size: 14px;
   }
 }
 
