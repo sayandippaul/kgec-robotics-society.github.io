@@ -103,7 +103,7 @@
   gap: 12px;
 }
 
-.container-techfest .social-links {
+.container-techfest .social-links a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,7 +115,7 @@
   transition: background-color 250ms ease;
 }
 
-.container-techfest .social-links:hover {
+.container-techfest .social-links a:hover {
   background-color: var(--clr-accent-light);
 }
 
