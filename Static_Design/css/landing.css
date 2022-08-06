@@ -83,29 +83,29 @@ body.light-theme {
   --clr-one: #fff;
   --clr-accent-light: #9900f8;
   --clr-accent: #7d00c9;
-  --clr-two: #000;
+  --clr-two: #131313;
   --clr-underline: #83a4ff;
   --clr-box-shadow: rgba(0, 0, 0, 0.25);
   transition: 0.2s;
 }
 
 body.dark-theme {
-  --clr-main-bg: #131313;
+  --clr-main-bg: #000;
   --clr-light: #ffe3fe;
   --clr-light-two: #ef02ff;
   --clr-medium-light: #b9b9b9;
-  --clr-one: #000;
+  --clr-one: #131313;
   --clr-accent-light: #b940c6;
   --clr-accent: #93329e;
   --clr-two: #fff;
   --clr-underline: #83a4ff;
-  --clr-box-shadow: rgba(255, 255, 255, 0.2);
+  --clr-box-shadow: rgba(255, 255, 255, 0.25);
   transition: 0.2s;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: var(--clr-two);
+  color: var(--clr-medium-light);
   font-size: 16px;
   background-color: var(--clr-main-bg);
   position: relative;

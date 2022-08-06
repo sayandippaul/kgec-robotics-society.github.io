@@ -1,0 +1,239 @@
+/* card design start */
+.member-section h2 {
+  text-align: center;
+  margin: auto;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--clr-accent);
+  font-weight: var(--fw-regular);
+}
+
+.faculty {
+  width: 100%;
+  padding: var(--gen-padding);
+  margin-bottom: 128px;
+  /* border-bottom: 1.5px solid var(--clr-dark); */
+}
+
+.row-2 {
+  padding: 24px 0;
+  /* border: 2px solid green; */
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  min-height: 420px;
+  padding: 24px;
+  background-color: var(--clr-one);
+  box-shadow: 0px 3px 8px var(--clr-box-shadow);
+  border-radius: 16px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  position: relative;
+  transition: var(--gen-transition);
+}
+
+.card.faculty-card::before {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 30%;
+  background-color: var(--clr-accent);
+  border-radius: 16px 16px 0 0;
+  z-index: 0;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 16px -2px var(--clr-box-shadow);
+  transform: translateY(-4px);
+}
+
+.card .top-part,
+.card .bottom-part {
+  min-height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .top-part {
+  justify-content: flex-end;
+}
+
+.card .bottom-part {
+  justify-content: space-between;
+}
+
+.card .image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  z-index: 2;
+}
+.card .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--clr-accent);
+}
+.card h3 {
+  color: var(--clr-accent);
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  margin-top: 16px;
+  font-weight: var(--fw-bold);
+}
+.card p {
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 8px;
+  color: var(--clr-medium-light);
+  font-family: "Montserrat", sans-serif;
+}
+.social-handle {
+  margin: 0 auto 0;
+  display: flex;
+  gap: 24px;
+}
+
+.social-handle i {
+  font-size: 20px;
+  color: var(--clr-accent);
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 200ms ease-in-out;
+}
+
+.social-handle i:hover {
+  transform: scale(1.2);
+}
+
+.club-head {
+  width: 100%;
+  padding: var(--gen-padding);
+  margin-bottom: 64px;
+}
+
+/* domain-leads */
+.domain-leads {
+  width: 100%;
+  margin: auto;
+  padding: var(--gen-padding);
+
+  margin-bottom: 64px;
+}
+
+.domain-leads .row-2 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.team h3 {
+  margin: auto;
+  margin-bottom: 16px;
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  font-size: 20px;
+}
+
+.team ul {
+  list-style: square;
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin: auto;
+}
+
+.team ul li {
+  list-style: square;
+
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: var(--fw-regular);
+  color: var(--clr-medium-light);
+}
+
+.team ul li::marker {
+  font-size: 20px;
+  margin: auto;
+  color: var(--clr-accent);
+}
+
+/* members and interns styling  */
+
+.club-mem {
+  width: 100%;
+  padding: var(--gen-padding);
+  text-align: center;
+}
+
+.member-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 8px;
+  padding: 24px;
+  border-radius: 16px;
+  margin-block: 48px;
+  background-color: var(--clr-one);
+  box-shadow: 0px 2px 8px var(--clr-box-shadow);
+}
+
+.member-list-item {
+  text-align: center;
+  padding: 16px;
+  background-color: var(--clr-main-bg);
+  color: var(--clr-medium-light);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.interns {
+  width: 100%;
+  padding: var(--gen-padding);
+}
+.club-mem h1,
+.interns h1 {
+  margin-bottom: 40px;
+}
+
+/* responsive */
+
+@media (max-width: 950px) {
+  :root {
+    --gen-padding: 24px;
+  }
+  .member-section h2 {
+    font-size: 32px;
+    margin-inline: auto;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .member-section h2 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .row-2 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
