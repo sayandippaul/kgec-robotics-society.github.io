@@ -1,11 +1,18 @@
-/* .contact-section {
-} */
 
 /* Notice section  */
 
 .notice-container {
   padding: 24px 40px;
-  margin-block: 24px 64px;
+  margin-block: 24px 128px;
+}
+
+.notice-container h2 {
+  text-align: center;
+  margin: auto;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--clr-accent);
+  font-weight: var(--fw-regular);
 }
 
 .notice-box {
