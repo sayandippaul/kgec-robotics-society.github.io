@@ -11,7 +11,7 @@
 .faculty {
   width: 100%;
   padding: var(--gen-padding);
-  margin-bottom: 64px;
+  margin-bottom: 128px;
   /* border-bottom: 1.5px solid var(--clr-dark); */
 }
 
