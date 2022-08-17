@@ -89,6 +89,10 @@
   background: #9900f8 !important;
 }
 
+.flickity-viewport{
+  min-height: 500px;
+}
+
 /* Responsive */
 
 @media (max-width: 950px) {
