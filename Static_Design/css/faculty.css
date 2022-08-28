@@ -20,13 +20,13 @@
   /* border: 2px solid green; */
   display: grid;
   gap: 50px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-content: center;
 }
 
 .card {
   width: 100%;
-  min-height: 420px;
+  /* min-height: 420px; */
   padding: 24px;
   background-color: var(--clr-one);
   box-shadow: 0px 3px 8px var(--clr-box-shadow);
@@ -34,7 +34,7 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
-  justify-self: center;
+  justify-content: space-between;
   position: relative;
   transition: var(--gen-transition);
 }
@@ -57,7 +57,6 @@
 
 .card .top-part,
 .card .bottom-part {
-  min-height: 50%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -70,11 +69,12 @@
 
 .card .bottom-part {
   justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .card .image {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   z-index: 2;
   overflow: hidden;
@@ -86,27 +86,33 @@
   border: 4px solid var(--clr-accent);
   object-fit: cover;
 }
-.faculty-card img{
+.faculty-card img {
   transform: scale(1.2);
 }
 .card h3 {
   color: var(--clr-accent);
-  font-size: 1.3rem;
+  font-size: 1.075rem;
   text-transform: capitalize;
-  margin-top: 16px;
+  margin-top: 12px;
   font-weight: var(--fw-bold);
 }
 .card p {
   text-align: center;
-  line-height: 1.6;
-  margin-top: 8px;
+  /* line-height: 1.6; */
+  margin-top: 6px;
   color: var(--clr-medium-light);
   font-family: "Montserrat", sans-serif;
 }
 .social-handle {
   margin: 0 auto 0;
+  padding-top: 1rem;
+  width: 100%;
   display: flex;
+  align-items: flex-end;
+  justify-content: center;
   gap: 24px;
+  border-top: 2px solid var(--clr-accent);
+  border-radius: 12px 12px 0 0;
 }
 
 .social-handle i {
@@ -136,9 +142,9 @@
   margin-bottom: 64px;
 }
 
-.domain-leads .row-2 {
+/* .domain-leads .row-2 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
+} */
 
 .team h3 {
   margin: auto;
