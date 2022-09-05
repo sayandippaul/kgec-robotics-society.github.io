@@ -196,7 +196,7 @@ body {
   align-items: center;
   justify-content: space-between;
   color: var(--clr-light);
-  padding-block: 12px;
+  padding-block: 8px;
 }
 
 .logo {
@@ -258,6 +258,18 @@ body {
 .nav ul a:focus::after,
 .nav ul a:active::after {
   transform: scale(1);
+}
+
+.highlight-btn {
+  padding: 8px;
+  background-color: var(--clr-one);
+  color: var(--clr-two) !important;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.highlight-btn::after {
+  display: none !important;
 }
 
 .hero-section {
